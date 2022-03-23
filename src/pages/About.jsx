@@ -1,0 +1,30 @@
+function About() {
+  return (
+    <>
+      <h1 className='text-6xl mb-4'>Github Finder</h1>
+      <p className='mb-4 text-2xl font-light'>
+        A React app to search GitHub profiles and see profile details. This
+        project is part of the
+        
+          React Front To Back
+        
+        
+        <strong>
+          <a href='https://github.com/Vamshi-709'> Vamshi</a>
+        </strong>
+        .
+      </p>
+      <p className='text-lg text-black-400'>
+        Version <span className='text-black'>2.0.0</span>
+      </p>
+      <p className='text-lg text-red-400'>
+        Layout By:
+        <a className='text-black' href='https://twitter.com/G_krishna_vamsi'>
+          Vamshi krishna
+        </a>
+      </p>
+    </>
+  )
+}
+
+export default About
