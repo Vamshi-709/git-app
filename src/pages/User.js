@@ -46,15 +46,11 @@ function User() {
 
   const websiteUrl = blog?.startsWith('http') ? blog : 'https://' + blog
 
-  // NOTE: code here has been fixed so that stats no longer show scroll bar on
-  // mobile / small devices
-  // https://www.udemy.com/course/react-front-to-back-2022/learn/lecture/29768968#questions/16902278
-
   return (
     <>
       <div className='w-full mx-auto lg:w-10/12'>
         <div className='mb-4'>
-          <Link to='/' className='btn btn-ghost'>
+          <Link to='/' className='btn btn-primary'>
             Back To Search
           </Link>
         </div>

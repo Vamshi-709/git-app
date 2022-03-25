@@ -5,22 +5,23 @@ function About() {
       <p className='mb-4 text-2xl font-light'>
         A React app to search GitHub profiles and see profile details. This
         project is part of the
-        
+        <a href='https://www.udemy.com/course/modern-react-front-to-back/'>
+          {' '}
           React Front To Back
-        
-        
+        </a>{' '}
+        Udemy course by
         <strong>
-          <a href='https://github.com/Vamshi-709'> Vamshi</a>
+          <a href='https://github.com/Vamshi-709'> Vamshi Krishna</a>
         </strong>
         .
       </p>
-      <p className='text-lg text-black-400'>
-        Version <span className='text-black'>2.0.0</span>
+      <p className='text-lg text-gray-400'>
+        Version <span className='text-black'>1.0.0</span>
       </p>
-      <p className='text-lg text-red-400'>
+      <p className='text-lg text-gray-400'>
         Layout By:
         <a className='text-black' href='https://twitter.com/G_krishna_vamsi'>
-          Vamshi krishna
+         Vamshi
         </a>
       </p>
     </>

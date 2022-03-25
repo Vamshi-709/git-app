@@ -1,25 +1,30 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NavBar from "./components/layout/NavBar";
-import Footer from "./components/layout/Footer";
-import Alert from "./components/layout/Alert";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import User from "./pages/User";
-import Page404 from "./pages/Page404";
-import { GithubProvider } from "./context/github/GithubContext";
-import { AlertProvider } from "./context/alert/AlertContext";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import NavBar from './components/layout/NavBar'
+import Footer from './components/layout/Footer'
+import Alert from './components/layout/Alert'
+import Home from './pages/Home'
+import About from './pages/About'
+import User from './pages/User'
+import NotFound from './pages/NotFound'
+import { GithubProvider } from './context/github/GithubContext'
+import { AlertProvider } from './context/alert/AlertContext'
+
+// NOTE: Alert is only used on the '/' route moving to that route we can prevent
+// content shift when alert shows by hiding and unhiding the Alert rather than
+// conditionally rendering
 
 function App() {
   return (
     <GithubProvider>
       <AlertProvider>
         <Router>
-          <div className="flex flex-col justify-between h-screen">
+          <div className='flex flex-col justify-between h-screen'>
             <NavBar />
-            <main className="container mx-auto px-3 pb-12">
+
+            <main className='container mx-auto px-3 pb-12'>
               <Routes>
                 <Route
-                  path="/"
+                  path='/'
                   element={
                     <>
                       <Alert />
@@ -27,10 +32,10 @@ function App() {
                     </>
                   }
                 />
-                <Route path="/about" element={<About />} />
-                <Route path="/user/:login" element={<User />} />
-                <Route path="/notfound" element={<Page404 />} />
-                <Route path="*" element={<Page404 />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/user/:login' element={<User />} />
+                <Route path='/notfound' element={<NotFound />} />
+                <Route path='*' element={<NotFound />} />
               </Routes>
             </main>
 
@@ -39,7 +44,7 @@ function App() {
         </Router>
       </AlertProvider>
     </GithubProvider>
-  );
+  )
 }
 
-export default App;
+export default App

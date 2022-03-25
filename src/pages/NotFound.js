@@ -1,7 +1,7 @@
 import { FaHome } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-function Page404() {
+function NotFound() {
   return (
     <div className='hero'>
       <div className='text-center hero-content'>
@@ -18,4 +18,4 @@ function Page404() {
   )
 }
 
-export default Page404
+export default NotFound

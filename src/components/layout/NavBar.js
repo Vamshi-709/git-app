@@ -18,7 +18,7 @@ function NavBar({ title }) {
             <Link to='/' className='btn btn-primary'>
               Home
             </Link>
-            <Link to='/about' className='btn btn-outline btn-success'>
+            <Link to='/about' className='btn btn-success'>
               About
             </Link>
           </div>
@@ -29,7 +29,7 @@ function NavBar({ title }) {
 }
 
 NavBar.defaultProps = {
-  title: 'Github App',
+  title: 'Github Finder',
 }
 
 NavBar.propTypes = {
